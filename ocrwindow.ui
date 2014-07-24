@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OCRWindow</class>
+ <widget class="QWidget" name="OCRWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>594</width>
+    <height>484</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <item>
+    <widget class="QSplitter" name="splitter_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QPushButton" name="btnOCRAbrirImg">
+         <property name="text">
+          <string>Abrir imagem</string>
+         </property>
+         <property name="icon">
+          <iconset resource="hIP_Recursos.qrc">
+           <normaloff>:/new/icones/icones/document-open.png</normaloff>:/new/icones/icones/document-open.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnAnaliseProjecao">
+         <property name="text">
+          <string>Analise de Projecao</string>
+         </property>
+         <property name="icon">
+          <iconset resource="hIP_Recursos.qrc">
+           <normaloff>:/new/icones/icones/layer_raster_histogram.png</normaloff>:/new/icones/icones/layer_raster_histogram.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QCheckBox" name="chkbMatrizCoOcorrencia">
+             <property name="text">
+              <string>Matriz de Co-Ocorrencia</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="cbbMatrizCoOcorrencia">
+             <item>
+              <property name="text">
+               <string>A Direita</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Abaixo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>A Direita e Abaixo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>A Direita e Acima</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>A Direita e Baixo Diagonal</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>A Direita e Acima Diagonal</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QCheckBox" name="chkbDistBordaCaractere">
+             <property name="text">
+              <string>Distancia Borda-Caractere</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="cbbDistBordaCaractere">
+             <item>
+              <property name="text">
+               <string>Esq-Dir</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Dir-Esq</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Esq-Dir-Sub</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Esq-Dir-Desc</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Dir-Esq-Sub</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Dir-Esq-Desc</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bottom-Up</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Top-Down</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbHistogramas">
+           <property name="text">
+            <string>Histogramas</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbEntropia">
+           <property name="text">
+            <string>Entropia</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbUniformidade">
+           <property name="text">
+            <string>Uniformidade</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbHomogeniedade">
+           <property name="text">
+            <string>Homogeniedade</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbContraste">
+           <property name="text">
+            <string>Contraste</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbCorrelacao">
+           <property name="text">
+            <string>Correlaçao</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="btnTreinar">
+           <property name="text">
+            <string>Treinar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnClassificar">
+           <property name="text">
+            <string>Classificar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>4</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>260</width>
+          <height>267</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="leftMargin">
+          <number>1</number>
+         </property>
+         <property name="topMargin">
+          <number>1</number>
+         </property>
+         <property name="rightMargin">
+          <number>1</number>
+         </property>
+         <property name="bottomMargin">
+          <number>1</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="lblImg">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QPlainTextEdit" name="txtLog">
+       <property name="font">
+        <font>
+         <family>Courier New</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="hIP_Recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

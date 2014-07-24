@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/new/icones">
+        <file>icones/document-open.png</file>
+        <file>icones/system-log-out.png</file>
+        <file>icones/help-browser.png</file>
+        <file>icones/document-save.png</file>
+        <file>icones/edit-undo.png</file>
+        <file>icones/preferences-system.png</file>
+        <file>icones/system-shutdown.png</file>
+        <file>icones/camera-web.png</file>
+        <file>icones/aboutQt.png</file>
+        <file>icones/preferences-desktop-personal.png</file>
+        <file>icones/marker.png</file>
+        <file>icones/layer_raster_histogram.png</file>
+    </qresource>
+</RCC>
