@@ -66,6 +66,8 @@ private slots:
 
     void on_btnClassificar_clicked();
 
+    void on_btnOCRAbrirPasta_clicked();
+
 private:
     Ui::OCRWindow *ui;
     OCR *ocr;

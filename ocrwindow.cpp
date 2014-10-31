@@ -234,3 +234,30 @@ void OCRWindow::chamarExtratores(bool teste)
         ocr->extrairCaracteristicas(teste, OCR::HISTOGRAMAS);
     }
 }
+
+void OCRWindow::on_btnOCRAbrirPasta_clicked()
+{
+    // caixa de abertura de arquivo
+    QString folderName = QFileDialog::getExistingDirectory(this,
+                                                           tr("Abrir Imagem"),
+                                                           "",
+                                                           QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks);
+
+    if (!folderName.isEmpty()) {
+        qDebug() << folderName;
+        QDir dir(folderName);
+
+        dir.setFilter(QDir::Files | QDir::NoDotAndDotDot | QDir::NoSymLinks);
+        dir.setSorting(QDir::Name);
+
+        QStringList list = dir.entryList();
+
+        // FIXME: Nao esta aplicando os extratores! Ele diz 0 imagens!
+        foreach (QString name, list) {
+            qDebug() << name;
+            img_teste = new QImage(name);
+            chamarExtratores(true);
+        }
+        //imgUpdate();
+    }
+}

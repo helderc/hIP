@@ -22,15 +22,26 @@
      <widget class="QWidget" name="layoutWidget">
       <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
-        <widget class="QPushButton" name="btnOCRAbrirImg">
-         <property name="text">
-          <string>Abrir imagem</string>
-         </property>
-         <property name="icon">
-          <iconset resource="hIP_Recursos.qrc">
-           <normaloff>:/new/icones/icones/document-open.png</normaloff>:/new/icones/icones/document-open.png</iconset>
-         </property>
-        </widget>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QPushButton" name="btnOCRAbrirPasta">
+           <property name="text">
+            <string>Abrir pasta</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnOCRAbrirImg">
+           <property name="text">
+            <string>Abrir imagem</string>
+           </property>
+           <property name="icon">
+            <iconset resource="hIP_Recursos.qrc">
+             <normaloff>:/new/icones/icones/document-open.png</normaloff>:/new/icones/icones/document-open.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
        <item>
         <widget class="QPushButton" name="btnAnaliseProjecao">
@@ -244,8 +255,8 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>260</width>
-          <height>267</height>
+          <width>191</width>
+          <height>268</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_3">
