@@ -7,8 +7,8 @@ TARGET = hIP
 TEMPLATE = app
 
 win32 {
-    INCLUDEPATH += C:/OpenCV/include/
-    LIBS += -LC:/OpenCV/lib/ -llibopencv_core230 -llibopencv_highgui230 -llibopencv_imgproc230
+    INCLUDEPATH += C:/OpenCV246/include/
+    LIBS += -LC:/OpenCV246/lib/ -llibopencv_core246 -llibopencv_highgui246 -llibopencv_imgproc246
 }
 
 unix {
